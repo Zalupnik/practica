@@ -449,6 +449,12 @@ hr {
 
 .footer_block a {
   color: #f6f6f6;
+  border-bottom: 1px solid #171b24;
+  transition: all .3s ease-in-out;
+}
+
+.footer_block a:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .footer_block {
