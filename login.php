@@ -10,7 +10,7 @@
     <form method="POST">
         <input type="text" placeholder="Логин">
         <input type="password" placeholder="Пароль">
-        <buttot type="submit">Авторизоваться</buttot>
+        <button type="submit">Авторизоваться</button>
     </form>
 </body>
 </html>
