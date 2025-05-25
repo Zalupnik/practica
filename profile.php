@@ -1,3 +1,19 @@
+<?php
+// Стартуем сессию в самом начале файла
+session_start();
+
+// Проверяем авторизацию
+if (!isset($_SESSION['user_id'])) {
+    // Если не авторизован - перенаправляем на страницу входа
+    header('Location: login.php');
+    exit(); // Важно завершить выполнение скрипта
+}
+
+// Пользователь авторизован - показываем профиль
+require 'db.php';
+$user = $conn->query("SELECT * FROM users WHERE id = {$_SESSION['user_id']}")->fetch_assoc();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,65 +23,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav>
-        <div class="nav_block--one">
-            <div class="container navbar">
-                <div class="nav_moscow">
-                    <div class="moscow">Москва</div>
-                </div>
-                <div class="nav_link">
-                    <a href="delivery.html">Доставка</a>
-                    <a href="refund.html">Возврат</a>
-                    <a href="docs.html">Документация</a>
-                    <a href="contact.html">Контакты</a>
-                </div>
-            </div>
-        </div>
-        <div class="container nav_block">
-            <div class="nav_block--two">
-                <a href="index.html" class="block_logo_name">
-                    <img src="img/Light.png">
-                </a>
-                <a href="#" class="catalog_h">
-                    <div class="catalog_block">
-                        <img src="img/Icon.svg">
-                    </div>Каталог
-                </a>
-                <div class="nav_link">
-                    <a href="profile.php">
-                        <div class="nav_link_block">
-                            <img src="img/Icon (2).png" alt="profile">Профиль
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="nav_link_block">
-                            <img src="img/Icon (3).png" alt="profile">Заказы
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="nav_link_block">
-                            <img src="img/Icon (4).png" alt="profile">Корзина
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="nav_block--three">
-                <div class="nav_link">
-                    <a href="#">Акции</a>
-                    <a href="#">Строительные материалы</a>
-                    <a href="#">Керамическая плитка</a>
-                    <a href="#">Краски</a>
-                    <a href="#">Сантехника</a>
-                    <a href="#">Напольные покрытия</a>
-                    <a href="#">Инструменты</a>
-                    <a href="#">Обои</a>
-                    <a href="#">Окна</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <? include('header.php') ?>
 
     <section class="section_account">
         <div class="container account">
@@ -80,17 +38,14 @@
     <section class="section_info">
         <div class="container account">
             <div class="container_contact_block">
-                <div class="account_info">
-                    <h1 class="h1_info">Личная информация</h1>
-                </div>
                 <div class="info_block-p">
                     <div class="info_block_p-content one_cont">
-                        
+                        <h1>Добро пожаловать, <?= htmlspecialchars($user['full_name']) ?>!</h1>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+    <? include('footer.php') ?>
 </body>
 </html>

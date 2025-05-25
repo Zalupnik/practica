@@ -10,68 +10,7 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav_block--one">
-            <div class="container navbar">
-                <div class="nav_moscow">
-                    <div class="img_mesto">
-                        <img src="img/mesto.png" alt="moscow">
-                    </div>
-                    <div class="moscow">Москва</div>
-                </div>
-                <div class="nav_link">
-                    <a href="delivery.html">Доставка</a>
-                    <a href="refund.html">Возврат</a>
-                    <a href="docs.html">Документация</a>
-                    <a href="contact.html">Контакты</a>
-                </div>
-            </div>
-        </div>
-        <div class="container nav_block">
-            <div class="nav_block--two">
-                <a href="index.html" class="block_logo_name">
-                    <img src="img/Light.png">
-                </a>
-                <a href="#" class="catalog_h">
-                    <div class="catalog_block">
-                        <img src="img/Icon.svg">
-                    </div>Каталог
-                </a>
-                <div class="nav_link">
-                    <a href="profile.php">
-                        <div class="nav_link_block">
-                            <img src="img/Icon (2).png" alt="profile">Профиль
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="nav_link_block">
-                            <img src="img/Icon (3).png" alt="profile">Заказы
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="nav_link_block">
-                            <img src="img/Icon (4).png" alt="profile">Корзина
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="nav_block--three">
-                <div class="nav_link">
-                    <a href="#">Акции</a>
-                    <a href="#">Строительные материалы</a>
-                    <a href="#">Керамическая плитка</a>
-                    <a href="#">Краски</a>
-                    <a href="#">Сантехника</a>
-                    <a href="#">Напольные покрытия</a>
-                    <a href="#">Инструменты</a>
-                    <a href="#">Обои</a>
-                    <a href="#">Окна</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?include('header.php')?>
 
     <section class="section_delivery">
         <div class="container delivery">
@@ -166,43 +105,7 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container foot">
-            <div class="container-block">
-                <div class="block_mail">
-                    <a href="index.html" class="logo">
-                        <img src="img/Logo.png">
-                    </a>
-                    <div class="mail_block pepe">
-                        <img src="img/icon.png" alt="mail">
-                        <div class="mail">info@stroykastore.ru</div>
-                    </div>
-                    <div class="mail_block">
-                        <img src="img/icon (1).png" alt="addres">
-                        <div class="addres">Москва, ул. Камушкина 10</div>
-                    </div>
-                </div>
-                <div class="footer_block">
-                    <a href="#" class="footer_block-content">Личный кабинет</a>
-                    <a href="#" class="footer_block-content">Заказы</a>
-                    <a href="#" class="footer_block-content">Избранное</a>
-                    <a href="#" class="footer_block-content">Корзина</a>
-                </div>
-                <div class="footer_block">
-                    <a href="#" class="footer_block-content">Каталог</a>
-                    <a href="#" class="footer_block-content">Акции</a>
-                    <a href="#" class="footer_block-content">Бренды</a>
-                    <a href="#" class="footer_block-content">Контакты</a>
-                </div>
-                <div class="footer_block">
-                    <a href="#" class="footer_block-content">Стать продавцом</a>
-                    <a href="#" class="footer_block-content">Доставка</a>
-                    <a href="#" class="footer_block-content">Возврат</a>
-                    <a href="#" class="footer_block-content">Документация</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <? include('footer.php') ?>
 </body>
 
 </html>
