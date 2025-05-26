@@ -55,6 +55,12 @@ nav {
   gap: 5px;
 }
 
+
+.a_header {
+  display: flex;
+  gap: 10px;
+}
+
 .moscow {
   color: #5d6066;
 }
@@ -74,22 +80,6 @@ a {
 .nav_block--three {
   display: flex;
   justify-content: space-around;
-}
-
-.catalog_h {
-  display: flex;
-  justify-content: center;
-  background-color: #3cc6f1;
-  padding: 12px 20px;
-  color: white;
-  border-radius: 10px;
-  align-items: center;
-  gap: 10px;
-  transition: 0.2s ease-in-out;
-}
-
-.catalog_h:hover {
-  background-color: #2f323a;
 }
 
 .container {
@@ -368,7 +358,7 @@ hr {
 }
 
 .otziv_card {
-  width: 400px;
+  width: 100%;
   height: 415px;
   padding: 25px;
   background-color: #f6f6f6;
@@ -410,7 +400,7 @@ hr {
 }
 
 .container_about_block img {
-  width: 650px;
+  width: 600px;
   height: 500px;
   border-radius: 30px;
 }
@@ -743,6 +733,8 @@ hr {
 
 .container_contact_block {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .one_cont {
   width: 300px;
@@ -768,7 +760,7 @@ hr {
 .section_info {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 41vh;
 }
 
 
@@ -777,39 +769,51 @@ hr {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #5d6066;
+  background-color: #6363636b;
+  flex-direction: column;
 }
 
 .container_form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 30px;
+  align-content: center;
   background-color: #FFFFFF;
-  width: 350px;
+  width: 400px;
   border-radius: 30px;
 }
 
 .login_form {
-  height: 350px;
+  height: auto;
 }
 
 .register_form {
-  height: 400px;
+  height: auto;
+
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 input {
+  padding-left: 6px;
+  font-size: 14px;
   width: 100%;
-  height: 30px;
-  margin-top: 15px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 4px;
   outline:none;
   border: none;
   border-bottom: 1px solid #171b249f;
 }
 
 .container_content-form {
-  gap: 15px;
+  gap: 25px;
   display: flex;
   flex-direction: column;
+  
 }
 
 .container_content-form button {
@@ -817,12 +821,45 @@ input {
   margin-top: 30px;
   border: none;
   width: 100%;
-  height: 30px;
-  border-radius: 30px;
+  height: 45px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: #f6f6f6;
+}
+
+.container_content-form button:hover {
+  background-color: #2f323a;
 }
 
 .h1_login {
   display: flex;
   justify-content: center;
 
+}
+
+.form_a {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.form_a:hover {
+  color: #1c1f24;
+}
+
+.container_form_group {
+  display: flex;
+  gap: 70px;
+}
+
+.fio {
+  font-size: 18px;
+  color: #636363;
+  margin-left: 10px;
+}
+
+
+.corzina_img {
+  margin-right: 300px;
 }

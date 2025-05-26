@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +24,12 @@
                     <a href="refund.php">Возврат</a>
                     <a href="docs.php">Документация</a>
                     <a href="contact.php">Контакты</a>
-                    <? if (isset($_SESSION['user_id'])): ?>
+                    <?php if (isset($_SESSION['user_id'])): ?>
                         <a href="logout.php">Выход</a>
                     <?php else: ?>
-                        <a href="login.php">Войти</a> | 
-                        <a href="register.php">Регистрация</a>
+                        <div class="a_header">
+                            <a href="login.php">Войти</a>|<a href="register.php">Регистрация</a>
+                        </div>
                     <?php endif; ?>
                 </div>
             </div>
@@ -34,11 +39,6 @@
                 <a href="index.php" class="block_logo_name">
                     <img src="img/Light.png">
                 </a>
-                <a href="#" class="catalog_h">
-                    <div class="catalog_block">
-                        <img src="img/Icon.svg">
-                    </div>Каталог
-                </a>
                 <div class="nav_link">
                     <a href="profile.php">
                         <div class="nav_link_block">
@@ -46,30 +46,24 @@
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a href="index.php #populary_catergory">
                         <div class="nav_link_block">
-                            <img src="img/Icon (3).png" alt="profile">Заказы
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="nav_link_block">
-                            <img src="img/Icon (4).png" alt="profile">Корзина
+                            <img src="img/Icon (3).png" alt="profile">Популярные категории
                         </div>
                     </a>
                 </div>
             </div>
             <div class="nav_block--three">
                 <div class="nav_link">
-                    <a href="#">Акции</a>
-                    <a href="#">Строительные материалы</a>
-                    <a href="#">Керамическая плитка</a>
-                    <a href="#">Краски</a>
-                    <a href="#">Сантехника</a>
-                    <a href="#">Напольные покрытия</a>
-                    <a href="#">Инструменты</a>
-                    <a href="#">Обои</a>
-                    <a href="#">Окна</a>
+                    <a href="index.php #sale">Акции</a>
+                    <a href="index.php #pop_cat">Строительные материалы</a>
+                    <a href="index.php #pop_cat">Керамическая плитка</a>
+                    <a href="index.php #pop_cat">Краски</a>
+                    <a href="index.php #pop_cat">Сантехника</a>
+                    <a href="index.php #populary_catergory">Напольные покрытия</a>
+                    <a href="index.php #populary_catergory">Инструменты</a>
+                    <a href="index.php #pop_cat">Обои</a>
+                    <a href="index.php #pop_cat ">Окна</a>
                 </div>
             </div>
         </div>

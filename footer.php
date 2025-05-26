@@ -23,22 +23,18 @@
                     </div>
                 </div>
                 <div class="footer_block">
-                    <a href="#" class="footer_block-content">Личный кабинет</a>
-                    <a href="#" class="footer_block-content">Заказы</a>
-                    <a href="#" class="footer_block-content">Избранное</a>
-                    <a href="#" class="footer_block-content">Корзина</a>
+                    <a href="profile.php" class="footer_block-content">Личный кабинет</a>
+                    <a href="index.php #populary_catergory" class="footer_block-content">Популярные категории</a>
                 </div>
                 <div class="footer_block">
-                    <a href="#" class="footer_block-content">Каталог</a>
-                    <a href="#" class="footer_block-content">Акции</a>
-                    <a href="#" class="footer_block-content">Бренды</a>
-                    <a href="#" class="footer_block-content">Контакты</a>
+                    <a href="index.php #sale" class="footer_block-content">Акции</a>
+                    <a href="index.php #brend" class="footer_block-content">Бренды</a>
+                    <a href="contact.php" class="footer_block-content">Контакты</a>
                 </div>
                 <div class="footer_block">
-                    <a href="#" class="footer_block-content">Стать продавцом</a>
-                    <a href="#" class="footer_block-content">Доставка</a>
-                    <a href="#" class="footer_block-content">Возврат</a>
-                    <a href="#" class="footer_block-content">Документация</a>
+                    <a href="delivery.php" class="footer_block-content">Доставка</a>
+                    <a href="refund.php" class="footer_block-content">Возврат</a>
+                    <a href="docs.php" class="footer_block-content">Документация</a>
                 </div>
             </div>
         </div>

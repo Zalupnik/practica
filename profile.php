@@ -1,15 +1,11 @@
 <?php
-// Стартуем сессию в самом начале файла
 session_start();
 
-// Проверяем авторизацию
 if (!isset($_SESSION['user_id'])) {
-    // Если не авторизован - перенаправляем на страницу входа
     header('Location: login.php');
-    exit(); // Важно завершить выполнение скрипта
+    exit();
 }
 
-// Пользователь авторизован - показываем профиль
 require 'db.php';
 $user = $conn->query("SELECT * FROM users WHERE id = {$_SESSION['user_id']}")->fetch_assoc();
 ?>
@@ -39,10 +35,23 @@ $user = $conn->query("SELECT * FROM users WHERE id = {$_SESSION['user_id']}")->f
         <div class="container account">
             <div class="container_contact_block">
                 <div class="info_block-p">
-                    <div class="info_block_p-content one_cont">
-                        <h1>Добро пожаловать, <?= htmlspecialchars($user['full_name']) ?>!</h1>
+                    <h1 class="fio_h1">ФИО</h1><br>
+                    <div class="fio">
+                        <?= htmlspecialchars($user['full_name']) ?>
                     </div>
-                </div>
+                </div> 
+                <div class="info_block-p">
+                    <h1 class="fio_h1">Номер телефона</h1><br>
+                    <div class="fio">
+                        89924242345
+                    </div>
+                </div> 
+                <div class="info_block-p">
+                    <h1 class="fio_h1">Email</h1><br>
+                    <div class="fio">
+                        petya@gmail.com
+                    </div>
+                </div> 
             </div>
         </div>
     </section>

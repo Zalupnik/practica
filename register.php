@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="h1_login">
                         <h1>Регистрация</h1>
                     </div>
-                    <form action="POST">
+                    <form action="#" method="POST">
                         <div class="form-group">
                             <input type="text" name="full_name" placeholder="ФИО" required>
                         </div>
@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         </div>
                         <button type="submit">Зарегистрироваться</button>
                     </form>
-                    <p>Уже есть аккаунт? <a href="login.php">Войти</a></p>
+                    <p>Уже есть аккаунт? <a class="form_a" href="login.php">Войти</a></p>
                 </div>
             </div>
         </div>

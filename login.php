@@ -31,10 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             header('Location: profile.php');
             exit();
         } else {
-            $error = "Неверный пароль";
+           die("Неверный пароль");
         }
     } else {
-        $error = "Пользователь с таким логином не найден";
+       die( "Пользователь с таким логином не найден");
     }
 }
 ?>
@@ -55,12 +55,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="h1_login">
                         <h1>Вход</h1>
                     </div>
-                    
                     <?php if (isset($error)): ?>
                         <div class="error"><?= htmlspecialchars($error) ?></div>
                     <?php endif; ?>
                     
-                    <form method="POST">
+                    
+                    <form action="#" method="POST">
                         <div class="form-group">
                             <input type="text" name="login" placeholder="Логин" required>
                         </div>
@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <button type="submit">Войти</button>
                     </form>
                     
-                    <p>Ещё нет аккаунта? <a href="register.php">Зарегистрироваться</a></p>
+                    <p>Ещё нет аккаунта? <a class="form_a" href="register.php">Зарегистрироваться</a></p>
                 </div>  
             </div>
         </div>

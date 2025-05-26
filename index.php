@@ -31,7 +31,7 @@
     <section class="section_sale">
         <div class="container">
             <div class="special_sale-one">
-                <h1 class="h1">Акции</h1>
+                <h1 class="h1" id="sale">Акции</h1>
                 <div class="sale-card">
                     <div class="sale-card block_one">
                         <div class="card">
@@ -90,7 +90,7 @@
     <section class="populary_category">
         <div class="container">
             <div class="container_category">
-                <h1 class="h1">Популярные категории</h1>
+                <h1 id="pop_cat" class="h1">Популярные категории</h1>
                 <div class="block_populary_category">
                     <div class="card-populary_category">
                         <p class="name_card">Душевые</p>
@@ -148,7 +148,7 @@
     <section class="populary_tovari">
         <div class="container">
             <div class="container_tovari">
-                <h1 class="h1">Популярные товары</h1>
+                <h1 id="populary_catergory" class="h1">Популярные товары</h1>
                 <div class="container_tovari-pp">
                     <div class="card-populary_tovari">
                         <img src="img_populary_tovari/керамогранит.png" class="tovar-populary_tovari"></img>
@@ -268,7 +268,7 @@
     <section class="populary_brand">
         <div class="container">
             <div class="container_brand">
-                <h1 class="h1">Популярные бренды</h1>
+                <h1 id="brend" class="h1">Популярные бренды</h1>
                 <div class="container_brand-soft">
                     <div class="img-populary_brand">
                         <img class="one_img" src="img_brand/bever.png" alt="brand">
@@ -313,7 +313,7 @@
     <section class="otziv">
         <div class="container">
             <div class="otziv_sec">
-                <h1 class="h1">Популярные бренды</h1>
+                <h1 class="h1">Отзывы</h1>
                 <div class="cont_otziv">
                     <div class="otziv_card">
                         <div class="otziv_card-block_one">
