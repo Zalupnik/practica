@@ -760,7 +760,7 @@ hr {
 .section_info {
   display: flex;
   justify-content: center;
-  height: 41vh;
+  height: 45vh;
 }
 
 
@@ -862,4 +862,250 @@ input {
 
 .corzina_img {
   margin-right: 300px;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .nav_block--one, .nav_block--two {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .nav_link {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav_block--three {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .h1 {
+    font-size: 32px;
+  }
+  
+  .p {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+  
+  .pred {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .special_pred-img {
+    margin-left: -20px;
+    display: flex;
+    margin-top: -40px;
+  }
+  
+  .delivery_img {
+    display: flex;
+  }
+
+  .button_cont {
+    height: auto;
+    padding-top: 20px;
+  }
+  
+  .card {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .block_one {
+    flex-direction: column;
+  }
+  
+  .block img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .block_populary_category {
+    justify-content: center;
+  }
+  
+  .card-populary_category {
+    width: 45%;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .card-populary_category img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-populary_tovari {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-populary_tovari img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container_brand-soft {
+    justify-content: center;
+  }
+  
+  .img-populary_brand img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .cont_otziv {
+    flex-direction: column;
+  }
+  
+  .container_about_block {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .container_about_block img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .block-about p {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+  
+  .container-block {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 15px;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  
+  .delivery {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .pp {
+    width: 100%;
+  }
+  
+  .container_zakaz-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .zakaz_content {
+    width: 100%;
+  }
+  
+  .question_block {
+    padding: 20px;
+  }
+  
+  .question-content {
+    width: 100%;
+  }
+  
+  .question_content-p2 {
+    width: 100%;
+  }
+  
+  .soveti_block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .soveti_content-p {
+    width: 100%;
+  }
+  
+  .containerrr {
+    padding: 0 15px;
+  }
+  
+  .docs_content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .docs_block button {
+    width: 100%;
+  }
+  
+  .block_docs-img img {
+    width: 100%;
+  }
+  
+  .container_contact_block {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .one_cont, .two_cont {
+    width: 100%;
+  }
+  
+  .container_form {
+    width: 90%;
+  }
+  
+  .container_form_group {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .corzina_img {
+    margin-right: 0;
+  }
+  
+  /* Скрываем некоторые элементы на мобильных */
+  .resale, .perehod {
+    display: none;
+  }
+}
+
+
+.question_block_p {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.question_block_p .j img {
+  transition: transform 0.3s ease;
+}
+
+.question_content-p2 {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Стиль для активного состояния (если нужно) */
+.question_block_p.active {
+  background-color: #f6f6f6;
 }
