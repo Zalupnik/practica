@@ -318,7 +318,7 @@
                     <div class="otziv_card">
                         <div class="otziv_card-block_one">
                             <img src="img/Avatars.png" alt="Чуваак">
-                            <div class="name">Пётр</div>
+                            <div class="name">Василий</div>
                         </div>
                         <p>Сегодня 10.03.2022 года, брал перфоратор в аренду в магазине по улице Дорожная. Продавец всё
                             хорошо
@@ -346,7 +346,7 @@
                     <div class="otziv_card">
                         <div class="otziv_card-block_one">
                             <img src="img/Avatars.png" alt="Чуваак">
-                            <div class="name">Пётр</div>
+                            <div class="name">Алексей</div>
                         </div>
                         <p>Заказывал в данном магазине строй материалы. Привезли их вовремя и в прекрасном состоянии,
                             претензий
@@ -360,7 +360,7 @@
                     <div class="otziv_card">
                         <div class="otziv_card-block_one">
                             <img src="img/Avatars.png" alt="Чуваак">
-                            <div class="name">Пётр</div>
+                            <div class="name">Евгений</div>
                         </div>
                         <p>Данный магазин целиком и полностью оправдал все мои ожидания. Тут мне удалось найти апсалютно
                             все
