@@ -772,17 +772,27 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #6363636b;
+  height: 100vh; 
   flex-direction: column;
 }
 
 .container_form {
   padding: 30px;
   align-content: center;
-  background-color: #FFFFFF;
+  background-color: #f6f6f6;
   width: 400px;
   border-radius: 30px;
+}
+
+.profile_form {
+  width: 700px;
+  align-items: flex-start;
+}
+
+.bebe {
+  justify-content: flex-start;
+  margin: 80px 0px;
+  height: auto;
 }
 
 .login_form {
@@ -810,6 +820,7 @@ input {
   border-radius: 4px;
   outline:none;
   border: none;
+  background-color: #f6f6f6;
   border-bottom: 1px solid #171b249f;
 }
 
