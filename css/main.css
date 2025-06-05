@@ -1053,8 +1053,12 @@ input {
 @media (max-width: 480px) {
   .container_tovari-pp {
     gap: 10px;
-  }
+  } 
   
+  .name_card {
+    font-size: 16px;
+  }
+
   .card-populary_tovari {
     padding: 10px;
   }
@@ -1163,7 +1167,7 @@ input {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .soveti_content-h1 {
     padding: 10px 0px;
   }
@@ -1252,6 +1256,10 @@ input {
     padding: 0 12px;
   }
 
+  .name_card {
+    font-size: 16px;
+  }
+
   #sale {
     font-size: 24px;
     text-align: center;
@@ -1334,3 +1342,15 @@ input {
     transition: all 0.2s ease;
   }
 }
+
+button:active {
+  transform: scale(0.95);
+}
+  form {
+    position: relative;
+  }
+  .error {
+    position: absolute;
+    top: 146px;
+    font-size: 12px;
+  }

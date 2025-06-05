@@ -2,7 +2,9 @@
 require 'db.php';
 
 session_start();
-
+$empty = false;
+$password = false;
+$login = false;
 if (isset($_SESSION['user_id'])) {
     header('Location: profile.php');
     exit();
@@ -10,7 +12,7 @@ if (isset($_SESSION['user_id'])) {
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($_POST['login']) || empty($_POST['password'])) {
-        die('Заполните все поля!');
+        $empty = true;
     }
 
     $login = $conn->real_escape_string($_POST['login']);
@@ -31,10 +33,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             header('Location: profile.php');
             exit();
         } else {
-           die("Неверный пароль");
+           $password = true;
         }
     } else {
-       die( "Пользователь с таким логином не найден");
+        $login = true;
     }
 }
 ?>
@@ -55,9 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="h1_login">
                         <h1>Вход</h1>
                     </div>
-                    <?php if (isset($error)): ?>
-                        <div class="error"><?= htmlspecialchars($error) ?></div>
-                    <?php endif; ?>
                     
                     
                     <form action="#" method="POST">
@@ -67,6 +66,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <div class="form-group">
                             <input type="password" name="password" placeholder="Пароль" required>
                         </div>
+                        <? if ($empty === true): ?>
+                            <div class="error">Заполните поля</div>
+                        <? endif; ?>
+                        <? if ($password === true): ?>
+                            <div class="error">Неверный пароль</div>
+                        <? endif; ?>
+                        <? if ($login === true): ?>
+                            <div class="error">Пользователь с таким логином не существует</div>
+                        <? endif; ?>
                         <button type="submit">Войти</button>
                     </form>
                     
